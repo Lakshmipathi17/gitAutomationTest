@@ -1,9 +1,6 @@
 
 REM path to the folder of your github repository
-SET GIT_DIR="/c/Users/lucky/Desktop/gitAutomationTest"
-
-REM Change to the Git directory
-cd /d %GIT_DIR%
+cd /d "C:\Users\lucky\Desktop\gitAutomationTest"
 
 REM Add all files to the staging area
 git add --all
@@ -22,6 +19,8 @@ SET commitMessage=File contents added
 REM Commit changes with the provided message
 git commit -m "%commitMessage%"
 
+git push --set-upstream origin main
+
 REM Push changes to the remote repository
-git push origin master
+git push  origin
 
